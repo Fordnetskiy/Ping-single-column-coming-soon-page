@@ -1,0 +1,54 @@
+@media(max-width: 807px){
+
+  body{
+	  padding: 3rem 1rem;
+  }
+
+  .subscription-title {
+	  font-size: 2rem;
+  }
+
+  form{
+	  width: 100%;
+    gap: 2.6rem;
+    flex-direction: column;
+  }
+  
+  .form-btn {
+	  width: 100%;
+  }
+
+  .err-hidden {
+    top: 60px;
+	  bottom: 0;
+	  left: 70px;
+    font-size: 12px;
+  }
+
+  .image-block img{
+	  max-width: 100%;
+  }
+  .social__list-item {
+	  width: 40px;
+	  height: 40px;
+  }
+  .social__list-item svg{
+	  transform: scale(0.9);
+  }
+  .copyright {
+	  font-size: 14px;
+  }
+}
+
+@media(max-width: 407px){
+  .subscription-title {
+	  font-size: 1.5rem;
+  }
+  .subscription-text {
+	  font-size: 1rem;
+  }
+  .err-hidden {
+    top: 60px;
+	  left: 40px;
+  }
+}

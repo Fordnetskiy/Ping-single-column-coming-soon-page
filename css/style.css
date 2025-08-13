@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+	--blue500: hsl(223, 87%, 63%);
+	--blue200: hsl(223, 100%, 88%);
+	--red400: hsl(354, 100%, 66%);
+	--grey400: hsl(0, 0%, 59%);
+	--blue950: hsl(209, 33%, 12%);
+}
+
+body{
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 20px;
+	padding: 4rem 3rem;
+}
+
+ul, li{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* H E A D E R */
+
+.logo {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+/* M A I N */
+
+.main {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.subscription {
+	margin-bottom: 5rem;
+}
+
+.subscription-title {
+	color: var(--grey400);
+	font-weight: 300;
+	font-size: 2.7rem;
+	margin-bottom: 1rem;
+}
+.subscription-title span{
+	color: var(--blue950);
+	font-weight: 700;
+}
+
+.subscription-text {
+	margin-bottom: 2.3rem;
+}
+
+/* F O R M */
+
+form{
+	position: relative;
+	width: 666px;
+	display: flex;
+	gap: 1rem;
+}
+
+.email{
+	width: 100%;
+	padding: 15px 28px;
+	font-size: 18px;
+	border-radius: 60px;
+	border: 1px solid var(--blue200);
+}
+
+.email:focus{
+	outline: none;
+}
+
+.email::placeholder{
+	color: var(--blue200);
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.err-hidden {
+	font-size: 14px;
+	color: var(--red400);
+	position: absolute;
+	display: none;
+	bottom: -30px;
+	left: 30px;
+}
+
+.form-btn {
+	border: none;
+	background-color: var(--blue500);
+	color: #fff;
+	font-weight: 500;
+	padding: 15px 15px;
+	font-size: 16px;
+	border-radius: 60px;
+	width: 280px;
+	cursor: pointer;
+	box-shadow: 0px 8px 12px 1px hsla(223, 87%, 63%, 0.321);
+	transition: all .3s ease;
+}
+
+.form-btn:hover{
+	background-color: hsla(223, 87%, 63%, 0.814);
+}
+
+/* D A S H B O A R D */
+
+.image-block {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 6rem;
+	padding: 5px;
+}
+.image-block img{
+	max-width: 700px;
+}
+
+/* F O O T E R */
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+}
+.social__list {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.social__list-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid var(--blue200	);
+	fill: var(--blue500);
+	font-weight: 700;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.social__list-item:hover{
+	fill: #fff;
+	background-color: var(--blue500);
+}
+
+.copyright {
+	color: var(--grey400);
+}
